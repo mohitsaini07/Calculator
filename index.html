@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <audio src="click-sound.wav" id="click_sound"></audio>
+      <div class="calc">
+        <form>
+          <div class="display_content">
+            <input type="text" name="display_content" />
+          </div>
+          <div class="btns">
+            <input
+              type="button"
+              value="AC"
+              onclick="display_content.value = ''"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="display_content.value = display_content.value.toString().slice(0,-1)"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="display_content.value += '.'"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="display_content.value += '/'"
+            />
+            <input
+              type="button"
+              value="7"
+              onclick="display_content.value += '7'"
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="display_content.value += '8'"
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="display_content.value += '9'"
+            />
+            <input
+              type="button"
+              value="*"
+              onclick="display_content.value += '*'"
+            />
+            <input
+              type="button"
+              value="4"
+              onclick="display_content.value += '4'"
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="display_content.value += '5'"
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="display_content.value += '6'"
+            />
+            <input
+              type="button"
+              value="-"
+              onclick="display_content.value += '-'"
+            />
+            <input
+              type="button"
+              value="1"
+              onclick="display_content.value += '1'"
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="display_content.value += '2'"
+            />
+            <input
+              type="button"
+              value="3"
+              onclick="display_content.value += '3'"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="display_content.value += '+'"
+            />
+            <input
+              type="button"
+              value="00"
+              onclick="display_content.value += '00'"
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="display_content.value += '0'"
+            />
+            <input
+              type="button"
+              value="%"
+              onclick="display_content.value += '%'"
+            />
+            <input
+              type="button"
+              value="="
+              onclick="display_content.value = eval(display_content.value)"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #e3f9ff;
+  display: grid;
+  place-items: center;
+}
+.calc {
+  background: rgb(35, 67, 88);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.calc form .btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 3px solid rgb(27, 51, 78);
+}
+.calc form input {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 0.5rem;
+  margin: 0.3rem;
+  box-shadow: 2px 5px 20px #000;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+form .display_content {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0;
+}
+form .display_content input {
+  flex: 1;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  box-shadow: none;
+  font-size: 2.5rem;
+}
+.btns input:nth-child(1),
+.btns input:nth-child(2),
+.btns input:nth-child(3),
+.btns input:nth-child(4) {
+  margin-top: 2rem;
+}
+.btns input:nth-child(1),
+.btns input:nth-child(2),
+.btns input:nth-child(3),
+.btns input:nth-child(4),
+.btns input:nth-child(8),
+.btns input:nth-child(12),
+.btns input:nth-child(16),
+.btns input:nth-child(20) {
+  background: #cbd5d7;
+  color: rgb(36, 71, 110);
+}
